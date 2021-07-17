@@ -19,18 +19,15 @@
       <table class="table table-hover">
         <thead><tr>
           <th>Curso</th>
-          <td> |      |</td>
           <th>Certificado</th>
-          <td> |      |</td>
           <th>Centro emisor</th>
         </tr></thead>
         <tbody>
+
 <% certificados.forEach(certificado => { %>
           <tr>
             <td><%= certificado.curso %></td>
-            <td>  </td>
             <td><a href="<%= certificado.foto %>"><img src="<%= certificado.foto %>"></a></td>
-            <td></td>
             <td><%= certificado.tags %></td>
           </tr>
 <% }) %>

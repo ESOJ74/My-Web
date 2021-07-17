@@ -29,7 +29,7 @@ certificadoSchema.statics.cargaJson = async function (fichero) {
     throw new Error(fichero + ' está vacio!');
   }
 
-  const certificados = JSON.parse(data).anuncios;
+  const certificados = JSON.parse(data).certificados;
   const numCertificados = certificados.length;
 
   for (var i = 0; i < certificados.length; i++) {

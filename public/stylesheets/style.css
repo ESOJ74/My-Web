@@ -1,12 +1,32 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: -moz-default-background-color;
 }
 
 a {
-  color: #00B7FF;
+  color: coral;
 }
 
-table tr td img {
-  max-height: 70px;
+.table-hover {
+  background: azure;
+  width: 450px;
 }
+
+.table-hover thead tr{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.table-hover img{
+  max-height: 80px;
+}
+
+.table-hover tbody td{
+  margin-bottom: auto;
+  font-size: 20px;
+  margin: auto;
+}
+
+
+
