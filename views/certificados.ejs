@@ -1,0 +1,57 @@
+<% include _header %>
+
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header"><a href="/" class="navbar-brand">NodeApi</a></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Certificados</h1>
+      <p class="lead">Listando: <%= certificados.length %> de <%= total %></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-hover">
+        <thead><tr>
+          <th>Curso</th>
+          <td> |      |</td>
+          <th>Certificado</th>
+          <td> |      |</td>
+          <th>Centro emisor</th>
+        </tr></thead>
+        <tbody>
+<% certificados.forEach(certificado => { %>
+          <tr>
+            <td><%= certificado.curso %></td>
+            <td>  </td>
+            <td><a href="<%= certificado.foto %>"><img src="<%= certificado.foto %>"></a></td>
+            <td></td>
+            <td><%= certificado.tags %></td>
+          </tr>
+<% }) %>
+        </tbody>
+      </table>
+
+      <p>Ejemplos:</p>
+
+      <ul>
+        <li><a href="?">Todos (max. 1000)</a></li>
+        <li><a href="?start=0&limit=1">Paginado</a></li>
+        <li><a href="?sort=curso">Ordenado por precio ascendente</a></li>
+        <li><a href="?sort=-curso">Ordenado por precio descendente</a></li>
+        <li><a href="?tag=KeepCoding">Con tag KeepCoding</a></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <a href="/">Volver a la home</a>
+
+</div>
+
+<% include _footer %>

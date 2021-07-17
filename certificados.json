@@ -1,0 +1,19 @@
+{
+  "anuncios": [
+    {
+      "curso": "Angular 6",
+      "foto": "angular 6.png",
+      "tags" : "KeepCoding"
+    },
+    {
+      "curso": "Ciberseguridad enfocada en Pentesting",
+      "foto": "ciberseguridad-enfocada-en-pentesting.png",
+      "tags" : "KeepCoding"
+    },
+    {
+      "curso": "Aprende Machine Learning",
+      "foto": "aprende-machine-learning.png",
+      "tags" : "KeepCoding"
+    }
+  ]
+}
